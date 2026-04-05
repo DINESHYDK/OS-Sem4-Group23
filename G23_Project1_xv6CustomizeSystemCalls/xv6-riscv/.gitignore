@@ -1,0 +1,35 @@
+# --- OS Compiled Files & Outputs ---
+*~
+_*
+*.o
+*.d
+*.asm
+*.sym
+*.img
+vectors.S
+bootblock
+entryother
+initcode
+initcode.out
+kernelmemfs
+mkfs
+kernel/kernel
+user/usys.S
+.gdbinit
+TAGS
+
+# --- Team Collaboration & IDE Specifics ---
+# Ignore VS Code workspace settings (since you use VS Code)
+.vscode/
+
+# Ignore Windows/Mac hidden files (in case your teammates use Mac)
+.DS_Store
+Thumbs.db
+
+# Ignore temporary editor files (in case teammates use Vim/Nano)
+*.swp
+*.swo
+
+# Ignore test output text files you might generate
+*.txt
+*.log
