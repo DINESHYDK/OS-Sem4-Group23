@@ -147,6 +147,8 @@ UPROGS=\
 	$U/_dorphan\
 	$U/_readcount_test\
 	$U/_halt_test\
+	$U/_test_sigalarm\
+	$U/_test_shm\
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)
