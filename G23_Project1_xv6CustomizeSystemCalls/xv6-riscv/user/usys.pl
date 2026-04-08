@@ -44,3 +44,6 @@ entry("pause");
 entry("uptime");
 entry("getreadcount");
 entry("halt");
+entry("sigalarm");
+entry("sigreturn");
+entry("shm_get");
