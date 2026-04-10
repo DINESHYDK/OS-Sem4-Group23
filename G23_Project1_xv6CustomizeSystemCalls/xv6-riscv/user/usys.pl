@@ -49,3 +49,5 @@ entry("sigreturn");
 entry("shm_get");
 entry("getprocinfo");
 entry("ps");
+entry("getfreemem");
+entry("getopenfiles");

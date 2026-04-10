@@ -104,6 +104,9 @@ void            procdump(void);
 int             getprocinfo(int);
 int             ps(void);
 
+extern int getfreemem(void);
+extern int getopenfiles(void);
+
 // swtch.S
 void            swtch(struct context*, struct context*);
 

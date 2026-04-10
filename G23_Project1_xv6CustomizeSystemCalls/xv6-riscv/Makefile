@@ -148,6 +148,7 @@ UPROGS=\
 	$U/_readcount_test\
 	$U/_halt_test\
 	$U/_sankar_test\
+	$U/_getmem_test \
 
 fs.img: mkfs/mkfs README $(UPROGS)
 	mkfs/mkfs fs.img README $(UPROGS)

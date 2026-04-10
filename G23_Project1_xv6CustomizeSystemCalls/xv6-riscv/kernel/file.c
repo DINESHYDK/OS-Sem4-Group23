@@ -178,3 +178,15 @@ filewrite(struct file *f, uint64 addr, int n)
   return ret;
 }
 
+int
+getopenfiles(void)
+{
+  int n = 0;
+  struct proc *p = myproc();
+
+  for(int i = 0; i < NOFILE; i++)
+    if(p->ofile[i])
+      n++;
+
+  return n;
+}

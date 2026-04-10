@@ -225,3 +225,14 @@ sys_ps(void)
   return ps();
 }
 
+uint64
+sys_getfreemem(void)
+{
+  return getfreemem();
+}
+
+uint64
+sys_getopenfiles(void)
+{
+  return getopenfiles();
+}

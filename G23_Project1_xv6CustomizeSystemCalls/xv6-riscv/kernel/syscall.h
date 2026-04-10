@@ -27,3 +27,5 @@
 #define SYS_shm_get 26
 #define SYS_getprocinfo 27
 #define SYS_ps 28
+#define SYS_getfreemem 29
+#define SYS_getopenfiles 30

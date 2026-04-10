@@ -31,6 +31,8 @@ int sigreturn(void);
 void *shm_get(int key);
 int getprocinfo(int);
 int ps(void);
+int getfreemem(void);
+int getopenfiles(void);
 
 // ulib.c
 int stat(const char *, struct stat *);
