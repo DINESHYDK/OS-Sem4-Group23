@@ -122,6 +122,7 @@ sys_halt(void)
 }
 
 uint64
+
 sys_sigalarm(void)
 {
   int n;
@@ -209,3 +210,18 @@ sys_shm_get(void)
   p->sz = va + PGSIZE;
   return va;
 }
+
+uint64
+sys_getprocinfo(void)
+{
+  int pid;
+  argint(0, &pid);
+  return getprocinfo(pid);
+}
+
+uint64
+sys_ps(void)
+{
+  return ps();
+}
+

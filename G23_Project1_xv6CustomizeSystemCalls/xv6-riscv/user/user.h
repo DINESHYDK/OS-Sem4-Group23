@@ -29,6 +29,8 @@ int halt(void);
 int sigalarm(int ticks, void (*handler)());
 int sigreturn(void);
 void *shm_get(int key);
+int getprocinfo(int);
+int ps(void);
 
 // ulib.c
 int stat(const char *, struct stat *);

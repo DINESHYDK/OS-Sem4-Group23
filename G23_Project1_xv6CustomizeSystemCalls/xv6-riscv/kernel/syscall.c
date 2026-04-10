@@ -102,6 +102,8 @@ extern uint64 sys_halt(void);
 extern uint64 sys_sigalarm(void);
 extern uint64 sys_sigreturn(void);
 extern uint64 sys_shm_get(void);
+extern uint64 sys_getprocinfo(void);
+extern uint64 sys_ps(void);
 
 // An array mapping syscall numbers from syscall.h
 // to the function that handles the system call.
@@ -132,6 +134,8 @@ static uint64 (*syscalls[])(void) = {
     [SYS_sigalarm] sys_sigalarm,
     [SYS_sigreturn] sys_sigreturn,
     [SYS_shm_get] sys_shm_get,
+    [SYS_getprocinfo] sys_getprocinfo,
+    [SYS_ps] sys_ps,
 };
 
 void syscall(void)

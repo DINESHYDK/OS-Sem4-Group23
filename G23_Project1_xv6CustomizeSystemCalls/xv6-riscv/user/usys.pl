@@ -47,3 +47,5 @@ entry("halt");
 entry("sigalarm");
 entry("sigreturn");
 entry("shm_get");
+entry("getprocinfo");
+entry("ps");

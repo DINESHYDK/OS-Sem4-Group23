@@ -25,3 +25,5 @@
 #define SYS_sigalarm 24
 #define SYS_sigreturn 25
 #define SYS_shm_get 26
+#define SYS_getprocinfo 27
+#define SYS_ps 28
