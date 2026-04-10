@@ -147,8 +147,6 @@ UPROGS=\
 	$U/_dorphan\
 	$U/_readcount_test\
 	$U/_halt_test\
-	$U/_test_sigalarm\
-	$U/_test_shm\
 	$U/_sankar_test\
 
 fs.img: mkfs/mkfs README $(UPROGS)
